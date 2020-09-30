@@ -70,7 +70,7 @@ exports.signupUser = (req, res, next) => {
         from: "YOUR_SENDGRID_VERIFIED_EMAIL",
         subject: "Verify your Account on FoodieNow",
         html: `
-                      <p>Please verify your email by clicking on the link below - FoodHub</p>
+                      <p>Please verify your email by clicking on the link below - FoodieNow</p>
                       <p>Click this <a href="http://localhost:3002/auth/verify/${token}">link</a> to verify your account.</p>
                     `,
       });
@@ -240,9 +240,9 @@ exports.signupSeller = (req, res, next) => {
       transporter.sendMail({
         to: email,
         from: "YOUR_SENDGRID_VERIFIED_EMAIL",
-        subject: "Verify your Account on FoodHub",
+        subject: "Verify your Account on FoodieNow",
         html: `
-                      <p>Please verify your email by clicking on the link below - FoodHub</p>
+                      <p>Please verify your email by clicking on the link below - FoodieNow</p>
                       <p>Click this <a href="http://localhost:3002/auth/verify/${token}">link</a> to verify your account.</p>
                     `,
       });
